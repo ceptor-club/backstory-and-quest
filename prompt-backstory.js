@@ -2,7 +2,37 @@
 const monstersData = require("./monsters.json")
 
 // roll the dice (VRF Feature Chainlink) to fight the monster
-// VRF Feature Chainlink will give a random value between 1 and 6 from vrf_dice.js
+// VRF Feature Chainlink will give a random value between 1 and 6
+// Function to calculate the modulus of big integers
+function calculateModulus(x, y) {
+  // Convert the input strings to arrays of digits
+  let num1 = x.split("").map(Number)
+  let num2 = y.split("").map(Number)
+
+  // Initialize variables
+  let result = []
+  let carry = 0
+
+  // Perform long division
+  for (let i = 0; i < num1.length; i++) {
+    let digit = ((carry * 10 + num1[i]) / num2[0]) | 0
+    carry = (carry * 10 + num1[i]) % num2[0]
+    result.push(digit)
+  }
+
+  // Return the modulus as a string
+  carry = carry + 1
+  return carry.toString()
+}
+
+// Test the function
+// call the deployed smart contract vrf function from
+// requestRandomWords() > MetaMask > lastRequestId() > getRequestStatus() specifying the requestId
+// store as string in x
+let x = "77646113924834270905986252651261454755461368763224543181842455140643798236323"
+let y = "6"
+let modulus = calculateModulus(x, y)
+console.log(modulus)
 const vrf_res = 6
 
 // the vrf_res variable corresponds to the "CR" of the monster. Look for the monster with CR = 5 in the monstersData and store it in variable monster_to_fight
