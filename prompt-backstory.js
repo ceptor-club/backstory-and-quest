@@ -33,7 +33,7 @@ let x = "77646113924834270905986252651261454755461368763224543181842455140643798
 let y = "6"
 let modulus = calculateModulus(x, y)
 console.log(modulus)
-const vrf_res = 6
+const vrf_res = 6 // should be modulus here, but couldn't automate the vrf function call to the deployed smart contract so I just hardcoded the result of the vrf function call for the scope of the hackathon demo
 
 // the vrf_res variable corresponds to the "CR" of the monster. Look for the monster with CR = 5 in the monstersData and store it in variable monster_to_fight
 const monster_to_fight = monstersData.monsters[5]
