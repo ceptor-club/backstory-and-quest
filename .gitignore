@@ -117,3 +117,6 @@ updatedAllowlist.csv
 
 # Chainlink Functions request artifacts
 .chainlink_functions
+
+#history
+.history

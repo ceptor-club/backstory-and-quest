@@ -1,0 +1,145 @@
+{
+  "monsters": [
+    {
+      "name": "Kobold, Orrob",
+      "CR": 1,
+      "stat_block": {
+        "AC": 12,
+        "HP": 5,
+        "Speed": 30,
+        "STR": 7,
+        "DEX": 15,
+        "CON": 9,
+        "INT": 8,
+        "WIS": 7,
+        "CHA": 8
+      },
+      "description": "Orrob is a tricky Kobold with a knack for setting traps.",
+      "defeat_methods": [
+        "Perception",
+        "Investigation",
+        "Stealth",
+        "Acrobatics",
+        "Insight",
+        "Survival",
+        "Nature",
+        "History",
+        "Athletics",
+        "Intimidation",
+        "Arcana",
+        "Performance",
+        "Religion",
+        "Deception",
+        "Persuasion"
+      ],
+      "catchphrase": "You'll never see me coming!",
+      "weapon": "Dagger"
+    },
+    {
+      "name": "Goblin, Grak",
+      "CR": 2,
+      "stat_block": {
+        "AC": 15,
+        "HP": 7,
+        "Speed": 30,
+        "STR": 8,
+        "DEX": 14,
+        "CON": 10,
+        "INT": 10,
+        "WIS": 8,
+        "CHA": 8
+      },
+      "description": "Grak is a cunning Goblin, skilled at ambushes.",
+      "defeat_methods": [
+        "Perception",
+        "Investigation",
+        "Stealth",
+        "Acrobatics",
+        "Survival",
+        "Nature",
+        "Athletics",
+        "Intimidation",
+        "Deception",
+        "Persuasion"
+      ],
+      "catchphrase": "Your treasure or your life!",
+      "weapon": "Shortsword"
+    },
+    {
+      "name": "Orc, Throg",
+      "CR": 3,
+      "stat_block": {
+        "AC": 13,
+        "HP": 15,
+        "Speed": 30,
+        "STR": 16,
+        "DEX": 12,
+        "CON": 16,
+        "INT": 7,
+        "WIS": 11,
+        "CHA": 10
+      },
+      "description": "Throg is a powerful Orc Warrior, always ready to charge into battle.",
+      "defeat_methods": ["Athletics", "Acrobatics", "Stealth", "Nature", "Intimidation", "Persuasion"],
+      "catchphrase": "For the glory of Gruumsh!",
+      "weapon": "Greataxe"
+    },
+    {
+      "name": "Ghoul, Morgh",
+      "CR": 4,
+      "stat_block": {
+        "AC": 12,
+        "HP": 22,
+        "Speed": 30,
+        "STR": 13,
+        "DEX": 15,
+        "CON": 10,
+        "INT": 7,
+        "WIS": 10,
+        "CHA": 6
+      },
+      "description": "Morgh, a terrifying Ghoul, stalks its prey in the darkness.",
+      "defeat_methods": ["Religion", "Arcana", "Survival", "Perception"],
+      "catchphrase": "Your flesh is mine...",
+      "weapon": "Bite"
+    },
+    {
+      "name": "Troll, Rorg",
+      "CR": 5,
+      "stat_block": {
+        "AC": 15,
+        "HP": 84,
+        "Speed": 30,
+        "STR": 18,
+        "DEX": 13,
+        "CON": 20,
+        "INT": 7,
+        "WIS": 9,
+        "CHA": 7
+      },
+      "description": "Rorg the Troll regenerates its wounds and strikes fear with its formidable size.",
+      "defeat_methods": ["Nature", "Acrobatics", "Arcana"],
+      "catchphrase": "You can't kill what doesn't die!",
+      "weapon": "Claws"
+    },
+    {
+      "name": "Dragon, Zephyros",
+      "CR": 6,
+      "stat_block": {
+        "AC": 18,
+        "HP": 152,
+        "Speed": 40,
+        "STR": 23,
+        "DEX": 10,
+        "CON": 21,
+        "INT": 14,
+        "WIS": 11,
+        "CHA": 17
+      },
+      "description": "Zephyros, a Young Bronze Dragon, commands storms and wields lightning against its foes.",
+      "defeat_methods": ["Arcana", "Persuasion"],
+      "catchphrase": "Feel the fury of the storm!",
+      "weapon": "Lightning Breath"
+    }
+  ]
+}
